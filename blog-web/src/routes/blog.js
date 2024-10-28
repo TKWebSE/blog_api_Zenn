@@ -30,8 +30,8 @@ function Blog() {
       <h2>{blog?.title}</h2>
       <h3>本文</h3>
       <p>{blog?.contents}</p>
-    </div>a
-  );
+    </div>
+  ); a
 }
 
 export default Blog;
