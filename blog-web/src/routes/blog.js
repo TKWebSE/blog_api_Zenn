@@ -31,7 +31,7 @@ function Blog() {
       <h3>本文</h3>
       <p>{blog?.contents}</p>
     </div>
-  );
+  ); a
 }
 
 export default Blog;
