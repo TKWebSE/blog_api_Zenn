@@ -9,7 +9,7 @@ function App() {
       </div>
       <div>
         <Link to="/blogs">記事一覧画面</Link>
-      </div>
+      </div>a
     </div>
   );
 }
