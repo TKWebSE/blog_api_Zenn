@@ -7,9 +7,9 @@ RUN apt-get update -qq && \
 RUN mkdir /app
 WORKDIR /app
 COPY Gemfile /app/Gemfile
-# COPY Gemfile.lock /app/Gemfile.lock
+COPY Gemfile.lock /app/Gemfile.lock
 RUN gem install bundler
-RUN bundle install --without test development
+RUN bundle install --without development test 
 RUN bundle update
 ADD . /app
 EXPOSE 3000
