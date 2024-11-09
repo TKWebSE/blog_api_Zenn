@@ -10,7 +10,7 @@ COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 RUN gem install bundler
 RUN bundle install --without development test 
-RUN bundle update
+RUN bundle updat
 ADD . /app
 EXPOSE 3000
 
